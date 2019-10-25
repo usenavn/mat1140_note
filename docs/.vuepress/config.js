@@ -1,5 +1,5 @@
 module.exports = {
-    title: ' ',
+    title: 'LIANJIE',
     description: 'gangsters paradise',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -7,9 +7,8 @@ module.exports = {
     themeConfig: {
       logo: '/logo.png',
       nav: [
-        { text: '🏠 Home', link: '/' },
+        { text: '🏠 Home', link: 'https://lianjie.fun' },
         { text: '📚 MAT1140', link: '/mat1140/' },
-        { text: '🎈 pipro', link: 'https://pipro.no' },
       ],
       sidebar: 'auto',
       searchMaxSuggestions: 10,
