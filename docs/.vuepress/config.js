@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'LIANJIE',
+    title: 'MAT1140',
     description: 'gangsters paradise',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
