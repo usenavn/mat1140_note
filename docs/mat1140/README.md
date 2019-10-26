@@ -219,3 +219,18 @@ $$m + p = n + p \implies m = n$$
 **Orden**<br>
 **Definisjon 1.2** Vi definerer en ordensrelasjon på $\mathbb{N}$: $$m\leq n \iff (\exists p\in \mathbb{N}\quad m+p=n)$$
 
+**Lemma 1.1** *For alle $m, n\in \mathbb{N}$ har vi: $m<n\implies S(m)\leq n$*
+
+**Teorem 1.5** *Forrige definisjon gir en ordensrelasjon på $\mathbb{N}$. Denne ordenener total.*
+
+**Teorem 1.6** *Mengden $\mathbb{N}$ er velordnet.*
+
+**Definisjon 1.3** (Substraksjon) La $m, n\in \mathbb{N}$. Når $m\leq n$ lar vi $n-m$ være det elementet i $\mathbb{N} som tilfredsstiller $m+(n-m)=n$.
+
+### 1.2 Hele tall
+
+**Definisjon.** Det er et problem, dersom man bare forholder seg til naturligetall, at substraksjon ikke alltid er definert. Mer eksplisitt: likninger av typen $m+p=n$, hvor la oss si, $m$ og $n$ er gitt i $\mathbb{N}$, mens $p$ er ukjent i $\mathbb{N}$, lar seg ikkealltid løse. Vi kan være mer presise: likningen lar seg løse bare når $m\leq n$. Innføringen av såkalte negative tall bøter på dette problemet.
+
+**Aksiom 1.2** De hele tallene er en mengde $\mathbb{Z}$ som inneholder $\mathbb{N}$ og som erutstyrt med en avbildning $- : \mathbb{Z} \to \mathbb{Z}$ slik at $- \circ - = id_\mathbb{Z}$ og, når vi definerer: $$- \mathbb{N}=\{-n \; :\; n\in \mathbb{N}\}$$ får vi: $$\mathbb{N}\cup - \mathbb{N}=\mathbb{Z}$$ $$\mathbb{N}\cap - \mathbb{N}=\{0\}$$
+
+**Proposisjon 1.7** *For alle $k\in \mathbb{Z}$ har vi $k=−k$ hvis og bare hvis $k= 0$.*
