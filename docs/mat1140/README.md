@@ -147,18 +147,18 @@ This allows for the axioms in ZFC to be stated succinctly using symbols, as in t
 #### Formal Definition (Axioms)
 The axioms of ZFC can be stated in several equivalent ways, and have slightly different names and logical formulations depending on the source. Of course, each individual source will have a rigorous correct treatment of the axioms, one of which follows:
 
-### <b>Axiom of extensionality</b>
+### Axiom of extensionality
 $$∀u(u∈X≡u∈Y)⟹X=Y$$
 ::: tip
 In other words, if $u \in X \iff u\in Y$ for all $u$, then $X=Y$. In plain language, this statement is equivalent to "If two sets have the same elements, they are the same set."
 :::
-### <b>Axiom of pairing</b>
+### Axiom of pairing
 $$∀a∀b∃z∀x(x∈z≡(x=a∨x=b)),$$
 where $\lor$ denotes the logical or quantifier.
 ::: tip
 In other words, for all $a$ and $b$, there exists a $z$ such that for all $x$, $x \in Z$ is equivalent to the statement "$x=a$ or $x=b$". In plain language, this statement is equivalent to "Given two elements, there exists a set containing exactly those two elements."
 :::
-### <b>Axiom of comprehension</b>
+### Axiom of comprehension
 $$∀X∀p∃Y∀u(u∈Y≡(u∈X∧ϕ(u,p))),$$
 where $\land$ is the logical and quantifier, and $\phi$ is an arbitrary property.
 
@@ -169,30 +169,30 @@ where $\land$ is the logical and quantifier, and $\phi$ is an arbitrary property
 In plain language, this statement is equivalent to "Given any property $\phi$ and set $X$, there exists a set containing all elements of $X$ that satisfy $\phi$." In informal terms, a subset of a set can be constructed by a succinct rule; e.g. the rule "$x$ even" applied to the set of integers results in a new set.
 :::
 
-### <b>Axiom of union</b>
+### Axiom of union
 $$∀X∃Y∀u(u∈Y≡∃z(z∈X∧u∈z)),$$
 where $\land$ is the logical and qualifier.
 ::: tip
 In other words, for all $X$ there exists a $Y$ such that for all $u$, $u \in Y$ is equivalent to the statement "There exists $z$ such that $z \in X$ and $u\in z$." In plain language, there exists a set $Y$ consisting of the union of all elements of $X$.
 :::
-### <b>Axiom of power set</b>
+### Axiom of power set
 $$∀X∃Y∀u(u∈Y≡u⊆X)$$
 ::: tip
 In other words, for any set $X$, there exists a set $Y$ whose elements are subsets of $X$. In plain language, this axiom states that the power set of $X$ exists.
 :::
-### <b>Axiom of infinity</b>
+### Axiom of infinity
 $$∃S(∅∈S∧(∀x∈S(x∪{x}∈S)))$$
 ::: tip
 In simpler terms, an infinite set exists.
 :::
-### <b>Axiom of replacement</b>  
+### Axiom of replacement
 If $F$ is any function, then for any set $X$ there exists a set $Y=F(X)={F(x),x∈X}$. The statement in logical quantifiers is more complex.
 
 ![Axiom of replacement](./aor.png)
 
 *A function takes any set $A$ to a new set $B=F(A)$*
 
-### <b>Axiom of regularity</b>
+### Axiom of regularity
 $$∀S(S\neq ∅⟹(∃x∈S:S∩x=∅))$$
 ::: tip
 In other words, for all non-empty sets $S$, there exists an element of $S$ that is disjoint with $S$ (shares no elements with $S$). This has two major consequences:
