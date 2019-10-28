@@ -28,7 +28,7 @@ Et *utsagn* har en sannhetsverdi, som enten er $0$ (usant) eller $1$ (sant). Det
 * implikasjon: $P\Rightarrow Q$, "$P$ impliserer $Q$"; "hvis $P$ så $Q$"; "$P$ medfører $Q$"
 * ekvivalens: $P\iff Q$, "$P$ er ekvivalent med $Q$"; "$P$ hvis og bare hvis $Q$"
 
-### **Egenskaper**. 
+### **Egenskaper** 
 Dersom $P$ er en *egenskap* og $x$ et objekt, skrives utsagnet "$x$ har egenskapen $P$" også $P(x)$, som uttales "$P$ av $x$".
 
 * Eksistensiell kvantor: $\exists xP(x)$, "Det eksisterer $x$ slik at $P(x)$"; "Det eksisterer $x$ med egenskap $P$"
@@ -37,7 +37,7 @@ Dersom $P$ er en *egenskap* og $x$ et objekt, skrives utsagnet "$x$ har egenskap
 ### **Mengder** 
 Det matematisk konseptet *mengde* har sitt opphav i vår intuisjon om samlinger av objekter. Utsagnet at objekt $x$ tilhører mengden $A$ skrives $x\in A$, som uttales "$x$ tilhører $A$" eller "$x$ er element av $A$". Et element i $A$ er altså et objekt som tilhører $A$.
 
-### **Relasjoner**. 
+### **Relasjoner** 
 *Relajsoner* kan tolkes som egenskaper ved par. At paret $(x,y)$ har egenskapen $R$ skrives $R(x,y)$, som uttales "$R$ av $x$ komma $y$". Evt. $xRy$.
 
 ### **Negasjon**
@@ -144,21 +144,21 @@ In general, statements in set theory are expressed using first-order logic, whic
 
 This allows for the axioms in ZFC to be stated succinctly using symbols, as in the following section.
 
-### Formal Definition (Axioms)
+#### Formal Definition (Axioms)
 The axioms of ZFC can be stated in several equivalent ways, and have slightly different names and logical formulations depending on the source. Of course, each individual source will have a rigorous correct treatment of the axioms, one of which follows:
 
-#### <b>Axiom of extensionality</b>
+### <b>Axiom of extensionality</b>
 $$∀u(u∈X≡u∈Y)⟹X=Y$$
 ::: tip
 In other words, if $u \in X \iff u\in Y$ for all $u$, then $X=Y$. In plain language, this statement is equivalent to "If two sets have the same elements, they are the same set."
 :::
-#### <b>Axiom of pairing</b>
+### <b>Axiom of pairing</b>
 $$∀a∀b∃z∀x(x∈z≡(x=a∨x=b)),$$
 where $\lor$ denotes the logical or quantifier.
 ::: tip
 In other words, for all $a$ and $b$, there exists a $z$ such that for all $x$, $x \in Z$ is equivalent to the statement "$x=a$ or $x=b$". In plain language, this statement is equivalent to "Given two elements, there exists a set containing exactly those two elements."
 :::
-#### <b>Axiom of comprehension</b>
+### <b>Axiom of comprehension</b>
 $$∀X∀p∃Y∀u(u∈Y≡(u∈X∧ϕ(u,p))),$$
 where $\land$ is the logical and quantifier, and $\phi$ is an arbitrary property.
 
@@ -169,30 +169,30 @@ where $\land$ is the logical and quantifier, and $\phi$ is an arbitrary property
 In plain language, this statement is equivalent to "Given any property $\phi$ and set $X$, there exists a set containing all elements of $X$ that satisfy $\phi$." In informal terms, a subset of a set can be constructed by a succinct rule; e.g. the rule "$x$ even" applied to the set of integers results in a new set.
 :::
 
-#### <b>Axiom of union</b>
+### <b>Axiom of union</b>
 $$∀X∃Y∀u(u∈Y≡∃z(z∈X∧u∈z)),$$
 where $\land$ is the logical and qualifier.
 ::: tip
 In other words, for all $X$ there exists a $Y$ such that for all $u$, $u \in Y$ is equivalent to the statement "There exists $z$ such that $z \in X$ and $u\in z$." In plain language, there exists a set $Y$ consisting of the union of all elements of $X$.
 :::
-#### <b>Axiom of power set</b>
+### <b>Axiom of power set</b>
 $$∀X∃Y∀u(u∈Y≡u⊆X)$$
 ::: tip
 In other words, for any set $X$, there exists a set $Y$ whose elements are subsets of $X$. In plain language, this axiom states that the power set of $X$ exists.
 :::
-#### <b>Axiom of infinity</b>
+### <b>Axiom of infinity</b>
 $$∃S(∅∈S∧(∀x∈S(x∪{x}∈S)))$$
 ::: tip
 In simpler terms, an infinite set exists.
 :::
-#### <b>Axiom of replacement</b>  
+### <b>Axiom of replacement</b>  
 If $F$ is any function, then for any set $X$ there exists a set $Y=F(X)={F(x),x∈X}$. The statement in logical quantifiers is more complex.
 
 ![Axiom of replacement](./aor.png)
 
 *A function takes any set $A$ to a new set $B=F(A)$*
 
-#### <b>Axiom of regularity</b>
+### <b>Axiom of regularity</b>
 $$∀S(S\neq ∅⟹(∃x∈S:S∩x=∅))$$
 ::: tip
 In other words, for all non-empty sets $S$, there exists an element of $S$ that is disjoint with $S$ (shares no elements with $S$). This has two major consequences:
