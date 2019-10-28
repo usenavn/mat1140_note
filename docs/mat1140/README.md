@@ -18,7 +18,116 @@ Etter å ha fullført emnet:
 
 - kjenner du utvalgsaksiomet og Zorns lemma og kan gjennomføre argumenter basert på dem.
 
-## Høst 2019
+## 1 Logikk
+### **Utsagn**
+Et *utsagn* har en sannhetsverdi, som enten er $0$ (usant) eller $1$ (sant). Det er ikke viktig hvilke symboler man bruker for usant og sant, man kan for eksempel også bruke $\bot$ og $\top$ dersom man foretrekker det. Vårt ønske er å bestemme sannhetsverdien til (kompliserte) utsagn.
+
+* negasjon: $\neg P$, "ikke $P$"
+* konjunksjon: $P\land Q$, "$P$ og $Q$"
+* disjunksjon: $P\lor Q$, "$P$ eller $Q$"
+* implikasjon: $P\Rightarrow Q$, "$P$ impliserer $Q$"; "hvis $P$ så $Q$"; "$P$ medfører $Q$"
+* ekvivalens: $P\iff Q$, "$P$ er ekvivalent med $Q$"; "$P$ hvis og bare hvis $Q$"
+
+### **Egenskaper**. 
+Dersom $P$ er en *egenskap* og $x$ et objekt, skrives utsagnet "$x$ har egenskapen $P$" også $P(x)$, som uttales "$P$ av $x$".
+
+* Eksistensiell kvantor: $\exists xP(x)$, "Det eksisterer $x$ slik at $P(x)$"; "Det eksisterer $x$ med egenskap $P$"
+* Universell kvantor: $\forall xP(x)$, "For alle $x$ har vi at $P(x)$"; "Alle $x$ har egenskap $P$"
+
+### **Mengder** 
+Det matematisk konseptet *mengde* har sitt opphav i vår intuisjon om samlinger av objekter. Utsagnet at objekt $x$ tilhører mengden $A$ skrives $x\in A$, som uttales "$x$ tilhører $A$" eller "$x$ er element av $A$". Et element i $A$ er altså et objekt som tilhører $A$.
+
+### **Relasjoner**. 
+*Relajsoner* kan tolkes som egenskaper ved par. At paret $(x,y)$ har egenskapen $R$ skrives $R(x,y)$, som uttales "$R$ av $x$ komma $y$". Evt. $xRy$.
+
+### **Negasjon**
+$\neg(P\land Q) \iff (\neg P\lor \neg Q)$<br>
+$\neg(P\lor Q) \iff (\neg P\land \neg Q)$<br>
+$\neg(P\Rightarrow Q) \iff (P\land \neg Q)$<br>
+$\neg(P\iff Q) \iff ((P\land \neg Q)\lor (\neg P\land Q))$<br>
+$\neg(\forall x\ P(x)) \iff (\exists x\ \neg P(x))$<br>
+$\neg(\exists x\ P(x)) \iff (\forall x\ \neg P(x))$<br>
+$\neg(\forall x\in A\quad P(x)) \iff (\exists x\in A\quad \neg P(x))$<br>
+$\neg(\exists x\in A\quad P(x)) \iff (\forall x\in A\quad \neg P(x))$<br>
+
+## 2 Bevis
+
+### **Lemma 2.1** 
+La $n\in \mathbb{Z}$. Da er $n$ et partall eller et oddetall, og ikke begge deler.
+
+### **Lemma 2.2** 
+La $n\in \mathbb{N}$. Vi definerer en følge $u_{k\in\mathbb{N}}$ induktivt slik: Først definerer vi:$$u_0=n$$ Så lar vi $k\in \mathbb{N}$ og antar at vi har definert $u_0,\cdots ,u_k$. Dersom $u_k$ er et partall definerer vi: $$u_{k+1}=(u_k)/2$$ og hvis ikke definerer vi: $$u_{k+1}=u_k$$ Da er følgen $(u_k)_{k\in \mathbb{N}}$ stasjonær.
+
+### **Lemma 2.3** 
+Anta $n\in \mathbb{Z}$. Hvis $n^2$ er et partall, så er $n$ et partall.
+
+### **Lemma 2.4** 
+For alle $n\in \mathbb{Z}$, hvis $n>0$ så $n\geq 1$.
+
+## 3 Mengder
+### **Aksiom 3.1**
+(Likhet av mengder). La $A$ og $B$ være mengder. Da er $A$ og $B$ like hvis og bare hvis de har akkurat de samme elementene. Det vil si:$$(A=B)\iff (\forall x\quad x\in A \iff x\in B)$$
+
+### **Definisjon 3.1** 
+Vi sier at en egenskap $P$ er *mengdedannende* dersom det finnes en mengde $A$ slik at: $$\forall x\quad x\in A\iff P(x)$$ Det følger i såfall av likhetsaksiomet at $A$ er entydig bestemt av $P$. Vi bruker følgende notasjon: $$A=\{x\; :\; P(x)\}$$
+
+### **Definisjon 3.2** 
+En mengde $A$ er *tom* dersom den ikke har noen elementer. Det vil si: $$\forall x\quad x\notin A$$
+
+### **Aksiom 3.2** 
+Egenskapen $\langle\langle x\; :\; x\neq x\rangle\rangle$ er mengdedannende, slik at det finnes en tom mengde. Den tomme mengden skrives $\emptyset$.
+
+### **Aksiom 3.3** 
+Gitt et objekt $x$ vil egenskapen $\langle\langle y\; : \; y=x\rangle\rangle$ være mengdedannende. Vi skriver $$\{x\}=\{y\; :\; y=x\}$$ Mengder av denne typen kalles *ettpunktsmengder*.
+
+### **Aksiom 3.4** 
+(Spesialisering). Dersom $A$ er en mengde og $P$ en egenskap, er egenskapen $\langle\langle x\; :\; x\in A\land P(x)\rangle\rangle$ mengdedannende. Vi forkorter: $$\{x\in A\; :\; P(x)\}=\{x\; :\; x\in A\land P(x)\}$$
+
+### **Definisjon 3.4** 
+Gitt mengder $A$ og $B$ kan vi definere:<br>
+* *snittet* av $A$ og $B$: $A\cap B=\{x\in A\; :\; x\in B\}$
+* *differansen* av $A$ og $B$: $A\backslash B=\{x\in A\; :\; \neg(x\in B)\}$
+* *unionen* av $A$ og $B$: $A\cup B=\{x\in A\; :\; x\in A\lor x\in B\}$
+
+### **Aksiom 3.5** 
+Gitt mengder $A$ og $B$ er egenskapen $\langle\langle x\; :\; x\in A\lor x\in B\rangle\rangle$ mengdedannende.
+
+### **Definisjon 3.5** 
+Når $B\subseteq A$ er det vanglig å kalle $A\backslash B$ for komplementet til $B$ i $A$ og man kan bruke notasjonen $\mathcal{C}_A(B)=A\backslash B$. Evt. $\mathcal{C}(B)=B^{\mathcal{C}}=A\backslash B$.
+
+### **Aksiom 3.6** 
+Dersom $A$ er en mengde utgjør delmengdene til $A$ en mengde, kalt *potensmengden* til $A$, som skrives $\wp (A)$:$$\wp (A)=\{B\; :\; B\subseteq A\}$$
+
+### **Aksiom 3.7** 
+Gitt mengder $A$ og $B$ er *produktet* av $A$ og $B$ veldeinert ved: $$A\times B=\{z\; : \; \exists x\in A \;\;\; \exists y\in B \;\;\; z=(x,y)\}$$ Det er vanlig å omskrive: $$A\times B=\{(x,y)\; :\; x\in A\land y\in B\}$$
+
+### **Definisjon 3.6** 
+En *graf* er en mengde bestående av par. Gitt mengder $A$ og $B$ er en graf fra $A$ til $B$ en delmengde av $A\times B$.
+
+### **Lemma 3.1** 
+Dersom $f\; :\; A\to B$, $g\; :\; B\to C$ og $h\; :\; C\to D$ har vi $h\circ (g\circ f)=(h\circ g)\circ f$
+
+## 4 Mer om mengder
+### **Aksiom 4.1** 
+Dersom $\mathcal{A}$ er en mengde bestående av mengder, kan de sistnevnte føyes sammen til en stor mengde, kalt unionen til $\mathcal{A}$, som skrives:$$\cup \mathcal{A}=\{x : \exists A\in \mathcal{A} \quad x\in A\}$$ Med en slik notasjon får vi: $$\cup \{A,B\}=A\cup B$$ Tilsvarende kan man deﬁnere, når $\mathcal{A}$ er en ikke-tom mengde bestående av mengder: $$\cap \mathcal{A}=\{x : \forall A\in \mathcal{A} \quad x\in A \}$$ Merk at vi har: $$\cap \{A,B\}=A\cap B$$
+
+### **Deﬁnisjon 4.1** 
+(Familier). La $U$ være en mengde og $I$ en annen mengde. En familie delmengder av $U$ indeksert av $I$ er en avbildning fra $I$ til $\mathcal{P}(U)$.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Når $A$ er en familie indeksert av $I$ er det vanlig å skrive $A$ i heller enn $A_i$ for verdien til $A$ i $i\in I$ og å betegne familien $A$ som $(A_i)_{i\in I}$. Merk at vi skriver verdimengden til $A$ som: $$\{A_i : i\in I \}$$
+
+### **Deﬁnisjon 4.2** 
+La $U$ være en mengde og $(A_i)_{i\in I}$ en familie delmengder av U.<br>
+Vi deﬁnerer snittet til familien ved: $$\cap _{i\in  I} \; A_i =\{x\in U : \forall i\in I\quad x\in A_i \}$$ og unionen ved: $$\cup _{i\in  I} \; A_i =\{x\in U : \exists i\in I\quad x\in A_i \}$$ Disse nye deﬁnisjonene tilsvarer de gamle ved at: $$\cap _{i\in I}\; A_i = \cap \{A_i : i\in I\}$$ og $$\cup _{i\in I}\; A_i = \cup \{A_i : i\in I\}$$
+
+### **Deﬁnisjon 4.3** 
+La $I$ og $U$ være en mengder og $$(A_i)_{i\in I}$ en familie delmengder av $U$. Vi deﬁnerer: $$\underset{i\in I}{\prod} A_i=\{f\in U^I : \forall i\in I\quad f(i)\in A_i \}$$
+
+### **Aksiom 4.2** 
+(Utvalgsaksiomet). La $(A_i)_{i\in I}$ være en familie mengder. Vi har da: $$(\forall i\in I\quad A_i\neq \emptyset)\implies \underset{i\in I}{\prod} A_i \neq \emptyset$$ Med andre ord, dersom hver 
+$A_i \neq\emptyset$ kan vi velge et element $f(i) \in A_i$ for hver $i\in I$. Da vil $f$ være et element i $\underset{i\in I}{\prod} A_i$. Grunnen til at det trengs et aksiom er at $I$ kan være uendelig, slik at man gjør uendelig mange valg simultant.
+
+
+
 
 ## Set Theory Axioms
 Specifically, ZFC is a collection of approximately 9 axioms (depending on convention and precise formulation) that, taken together, define the core of mathematics through the usage of set theory. More formally, ZFC is a predicate logic equipped with a binary relation ∈, which refers to set membership and is read as "in". To be clear, it is said that a∈b when **a** is an element of **b**.
@@ -186,9 +295,9 @@ Hva er egentlig tall? Tanken her, er ikke å si hva tall er, hva deres interne s
     * $\forall n\in\mathbb{N}\; P(n) \implies P(S(n))$.
     * Da holder $\forall n\in\mathbb{N}\; P(n)$.
 
-Vi bemerker at den induserte avbildningen $S : \mathbb{N} \to \mathbb{N} \setminus \{0\}$ må være en bijeksjon:
+Vi bemerker at den induserte avbildningen $S : \mathbb{N} \to \mathbb{N} \backslash \{0\}$ må være en bijeksjon:
 
-**Proposisjon 1.1** *Avbildningen $S : \mathbb{N} \to \mathbb{N} \setminus \{0\}$ er surjektiv.*
+**Proposisjon 1.1** *Avbildningen $S : \mathbb{N} \to \mathbb{N} \backslash \{0\}$ er surjektiv.*
 
 *Bevis*: Vi viser det ved induskjon. For hver $n\in \mathbb{N}$ har vi $P(n)$ være utsagnet:<br>
 (i) Vi har da $P(0)$.<br>
