@@ -10,7 +10,39 @@ module.exports = {
         { text: '🏠 Home', link: 'https://lianjie.fun' },
         { text: '📚 MAT1140', link: '/mat1140/' },
       ],
-      sidebar: 'auto',
+      sidebar: [
+        {
+          title: 'MAT1140',   // required
+          path: '/mat1140/',      // optional, which should be a absolute path.
+          collapsable: true, // optional, defaults to true
+          children: [
+            '/mat1140/',
+          ],
+        },
+        {
+          title: 'Notater',
+          path: '/notater/notat1/',
+          collapsable: true,
+          children: [
+            '/notater/notat1/',
+            '/notater/notat2/',
+            '/notater/notat3/',
+            '/notater/notat4/',
+            '/notater/notat5/',
+            '/notater/notat7/',
+          ]
+        },
+        {
+          title: 'Ressurs',
+          path: '/ressurs/set-theory-axioms/',
+          collapsable: true,
+          children: [
+            '/ressurs/set-theory-axioms/',
+            '/ressurs/functions/',
+            '/ressurs/peanos/',
+          ]
+        }
+      ],
       searchMaxSuggestions: 10,
       lastUpdated: 'Last Updated',
       smoothScroll: true,
