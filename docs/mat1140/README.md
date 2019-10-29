@@ -172,10 +172,41 @@ La $A$ være utstyrt med en assosiativ operasjon og et neutralt element $e$. La 
 ### Deﬁnisjon 5.9
 La $A$ være utstyrt med en operasjon $\star$. Man sier at en delmengde $B$ av $A$ er stabil under $\star$ dersom: $$\forall x,y\in B\quad x\star y \in B$$ I såfall kan man utstyre $B$ med den såkalte induserte operasjonen:
 
-$$\begin{cases} 
-& xdfdsf \\
-dfdsf 
-end{cases}$$
+<center><img src="./def5.9.png" style="height:90%;"></center>
+
+### Definisjon 5.10
+La $B$ være utstyrt med en operasjon $\star$. La $A$ være en ikke
+tom mengde. Vi utstyrer $B^A$ med en operasjon også kalt $\star$ som følger. For $f, g\in B^A$ definerer vi $f\star g\in B^A$ ved: $$\forall x\in A\quad (f\star g)(x)=f(x)\star g(x)$$
+
+### Definisjon 5.11
+Vi betrakter en mengde $\mathcal{R}$, utstyrt med to avbildninger kalt addisjon $(+)$ og multiplikasjon $(\times)$:
+
+<center><img src="./def5.11.png" style="height:90%;"></center>
+
+og to utvalgte elementer $0$ and $1$.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Vi sier at $(\mathcal{R},+,\times , 0, 1)$ er en ring dersom:
+* addisjon er assosiativ, kommutativ, har neutralt element $0$ og hvert
+element $x$ har en invers (som skrives $−x$).
+* multiplikasjon er assosiativ og har neutralt element $1$.
+* multiplikasjon distribuerer over addisjon, i den forstand at for alle $x, y, z\in R$ har vi: $$(x+y)z=xz+yz$$ $$z(x+y)=zx+zy$$
+
+### Definisjon 5.12
+La $\mathcal{R}$ være en ring.
+* Vi sier at $\mathcal{R}$ er triviell dersom $0 = 1$. Da har vi $\mathcal{R} = \{0\}$.
+* Vi sier at $\mathcal{R}$ er kommutativ dersom multiplikasjonen er kommutativ.
+* Dersom $\mathcal{R}$ er ikke-triviell, kommutativ og hvis vi har: $$\forall x,y \quad xy=0\implies (x=0\lor y=0)$$ sier vi at $\mathcal{R}$ er et integritetsdomene.
+* Dersom $\mathcal{R}$ er ikke-triviell, kommutativ og alle elementer bortsett fra $0$ har en multiplikativ invers, sier vi at $\mathcal{R}$ er en kropp.
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Set Theory Axioms
