@@ -38,7 +38,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Good to know 😉',
+          title: 'Good to know 💡',
           path: '/ressurs/set-theory-axioms/',
           collapsable: true,
           children: [
