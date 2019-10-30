@@ -1,4 +1,10 @@
 # Direkte/invers bilde. Naturlige tall, Peanos aksiomer.
+## Definisjon 4.6
+La $f: U\to V$ være en avbildning.<br>
+Når $A\subseteq U$ definerer vi direktebildet til $A$ som:
+<center><img src="./def4.6.png" style="height: 90%"></center>
+Når $B\subseteq A$ definerer vi inversbildet til $B$ som: $$f^{-1}[B]=\{x\in U \; :\; f(x)\in B\}$$
+
 ### Tall
 
 Hva er egentlig tall? Tanken her, er ikke å si hva tall er, hva deres interne struktur muligens kan være,men å si hva vi kan gjøre med dem, sett utenifra. Vi er vant til å addere og multiplisere tall, og sammenlikne dem, for eksempel, men er disse operasjonene uavhengige av hverandre? Kan de muligens avledes fra et enklere og mer grunnleggende konsept? Her skal vi ta utgangspunkt i en tellemekanisme, som vi tenker oss at består i å legge til én. Vi påstår at $0$ er et naturlig tall, og at hvert naturlige tall n har en suksessor $S(n)$. Vi tenker oss her at $S(n) = n + 1$, men at addisjon vil være en operasjon vi skal definere senere, ved hjelp av $S$. Vi forholder oss i utgangspunktet bare til at mengden $\mathbb{N}$ er utstyrt med et spesielt element $0\in \mathbb{N}$ og en avbildning $S : \mathbb{N} \to \mathbb{N}$. Akkurat hva trenger man å vite om $0$ og $S$ for at alle andre egenskaper ved de naturlige tallene skal kunne utledes? Det vanligste settet med aksiomer for $0$ og $S$ kalles Peanos aksiomer.
@@ -52,29 +58,3 @@ $$(m+n)+p=m+(n+p)$$
 $$m+0=0+m=m$$
 $$m + n = n + m$$
 $$m + p = n + p \implies m = n$$
-
-### Orden
-## Definisjon 6.2
-Vi definerer en ordensrelasjon på $\mathbb{N}$: $$m\leq n \iff (\exists p\in \mathbb{N}\quad m+p=n)$$
-
-**Lemma 1.1** *For alle $m, n\in \mathbb{N}$ har vi: $m<n\implies S(m)\leq n$*
-
-## Teorem 6.5
-*Forrige definisjon gir en ordensrelasjon på $\mathbb{N}$. Denne ordenener total.*
-
-## Teorem 6.6
-*Mengden $\mathbb{N}$ er velordnet.*
-
-## Definisjon 6.3
-(Substraksjon) La $m, n\in \mathbb{N}$. Når $m\leq n$ lar vi $n-m$ være det elementet i $\mathbb{N} som tilfredsstiller $m+(n-m)=n$.
-
-### Hele tall
-
-## Definisjon 6.3 
-Det er et problem, dersom man bare forholder seg til naturligetall, at substraksjon ikke alltid er definert. Mer eksplisitt: likninger av typen $m+p=n$, hvor la oss si, $m$ og $n$ er gitt i $\mathbb{N}$, mens $p$ er ukjent i $\mathbb{N}$, lar seg ikkealltid løse. Vi kan være mer presise: likningen lar seg løse bare når $m\leq n$. Innføringen av såkalte negative tall bøter på dette problemet.
-
-## Aksiom 6.2 
-De hele tallene er en mengde $\mathbb{Z}$ som inneholder $\mathbb{N}$ og som erutstyrt med en avbildning $- : \mathbb{Z} \to \mathbb{Z}$ slik at $- \circ - = id_\mathbb{Z}$ og, når vi definerer: $$- \mathbb{N}=\{-n \; :\; n\in \mathbb{N}\}$$ får vi: $$\mathbb{N}\cup - \mathbb{N}=\mathbb{Z}$$ $$\mathbb{N}\cap - \mathbb{N}=\{0\}$$
-
-## Proposisjon 6.7
-*For alle $k\in \mathbb{Z}$ har vi $k=−k$ hvis og bare hvis $k= 0$.*
