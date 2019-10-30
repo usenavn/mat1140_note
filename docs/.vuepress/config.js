@@ -12,7 +12,7 @@ module.exports = {
       ],
       sidebar: [
         {
-          title: 'MAT1140',   // required
+          title: 'MAT1140 📚',   // required
           path: '/mat1140/',      // optional, which should be a absolute path.
           collapsable: true, // optional, defaults to true
           children: [
@@ -20,7 +20,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Notater',
+          title: 'Notater 📝',
           path: '/notater/notat1/',
           collapsable: true,
           children: [
@@ -34,7 +34,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Good to know',
+          title: 'Good to know 😉',
           path: '/ressurs/set-theory-axioms/',
           collapsable: true,
           children: [
