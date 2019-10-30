@@ -1,1 +1,1 @@
-# 10 Kardinalitet
+# Kardinalitet

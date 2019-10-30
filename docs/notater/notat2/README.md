@@ -1,4 +1,4 @@
-# 2 Egenskaper, realsjoner, kvantorer. Bevis.
+# Egenskaper, realsjoner, kvantorer. Bevis.
 ## Egenskaper 
 Dersom $P$ er en *egenskap* og $x$ et objekt, skrives utsagnet "$x$ har egenskapen $P$" også $P(x)$, som uttales "$P$ av $x$".
 

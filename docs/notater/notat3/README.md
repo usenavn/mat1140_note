@@ -1,4 +1,4 @@
-# 3 mengder, inklusjon, snitt, union, komplement.
+# Mengder, inklusjon, snitt, union, komplement.
 ## Aksiom 3.1
 (Likhet av mengder). La $A$ og $B$ være mengder. Da er $A$ og $B$ like hvis og bare hvis de har akkurat de samme elementene. Det vil si:$$(A=B)\iff (\forall x\quad x\in A \iff x\in B)$$
 
@@ -17,6 +17,9 @@ Gitt et objekt $x$ vil egenskapen $\langle\langle y\; : \; y=x\rangle\rangle$ v�
 ## Aksiom 3.4 
 (Spesialisering). Dersom $A$ er en mengde og $P$ en egenskap, er egenskapen $\langle\langle x\; :\; x\in A\land P(x)\rangle\rangle$ mengdedannende. Vi forkorter: $$\{x\in A\; :\; P(x)\}=\{x\; :\; x\in A\land P(x)\}$$
 
+## Definisjon 3.3
+At $A$ er *inkludert* i $B$ skrives $A\subseteq B$ og er definert ved: $$(A\subseteq B)\iff (\forall x \quad x\in A\implies x\in B)$$
+ 
 ## Definisjon 3.4
 Gitt mengder $A$ og $B$ kan vi definere:<br>
 * *snittet* av $A$ og $B$: $A\cap B=\{x\in A\; :\; x\in B\}$
@@ -29,14 +32,4 @@ Gitt mengder $A$ og $B$ er egenskapen $\langle\langle x\; :\; x\in A\lor x\in B\
 ## Definisjon 3.5 
 Når $B\subseteq A$ er det vanglig å kalle $A\backslash B$ for komplementet til $B$ i $A$ og man kan bruke notasjonen $\mathcal{C}_A(B)=A\backslash B$. Evt. $\mathcal{C}(B)=B^{\mathcal{C}}=A\backslash B$.
 
-## Aksiom 3.6 
-Dersom $A$ er en mengde utgjør delmengdene til $A$ en mengde, kalt *potensmengden* til $A$, som skrives $\wp (A)$:$$\wp (A)=\{B\; :\; B\subseteq A\}$$
 
-## Aksiom 3.7 
-Gitt mengder $A$ og $B$ er *produktet* av $A$ og $B$ veldeinert ved: $$A\times B=\{z\; : \; \exists x\in A \;\;\; \exists y\in B \;\;\; z=(x,y)\}$$ Det er vanlig å omskrive: $$A\times B=\{(x,y)\; :\; x\in A\land y\in B\}$$
-
-## Definisjon 3.6 
-En *graf* er en mengde bestående av par. Gitt mengder $A$ og $B$ er en graf fra $A$ til $B$ en delmengde av $A\times B$.
-
-## Lemma 3.1 
-Dersom $f\; :\; A\to B$, $g\; :\; B\to C$ og $h\; :\; C\to D$ har vi $h\circ (g\circ f)=(h\circ g)\circ f$

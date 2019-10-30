@@ -1,1 +1,1 @@
-# 9 Ring, ordnet ring, summering.
+# Ring, ordnet ring, summering.

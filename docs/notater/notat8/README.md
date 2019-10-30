@@ -1,4 +1,4 @@
-# 8 Operasjoner
+# Operasjoner
 ## Definisjon 8.1
 En operasjon på en mengde $A$ er en avbildning fra $A\times A$ til $A$.
 
