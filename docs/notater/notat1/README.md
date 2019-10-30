@@ -1,7 +1,8 @@
 # 1 Utsagn, konnektiver.
-## **Utsagn**
+## Utsagn
 Et *utsagn* har en sannhetsverdi, som enten er $0$ (usant) eller $1$ (sant). Det er ikke viktig hvilke symboler man bruker for usant og sant, man kan for eksempel også bruke $\bot$ og $\top$ dersom man foretrekker det. Vårt ønske er å bestemme sannhetsverdien til (kompliserte) utsagn.
 
+## Konnektiver
 * negasjon: $\neg P$, "ikke $P$"
 * konjunksjon: $P\land Q$, "$P$ og $Q$"
 * disjunksjon: $P\lor Q$, "$P$ eller $Q$"
