@@ -31,6 +31,7 @@ module.exports = {
             '/notater/notat5/',
             '/notater/notat6/',
             '/notater/notat7/',
+            '/notater/notat8/',
           ]
         },
         {
