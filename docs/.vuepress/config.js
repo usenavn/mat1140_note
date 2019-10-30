@@ -29,17 +29,17 @@ module.exports = {
             '/notater/notat3/',
             '/notater/notat4/',
             '/notater/notat5/',
+            '/notater/notat6/',
             '/notater/notat7/',
           ]
         },
         {
-          title: 'Ressurs',
+          title: 'Good to know',
           path: '/ressurs/set-theory-axioms/',
           collapsable: true,
           children: [
             '/ressurs/set-theory-axioms/',
             '/ressurs/functions/',
-            '/ressurs/peanos/',
           ]
         }
       ],
