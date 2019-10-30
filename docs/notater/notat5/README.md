@@ -1,4 +1,4 @@
-# 5 Relasjoner, operasjoner, ringer
+# 5 familier av mengder, in-, sur-, bi-jeksjon.
 ## Definisjon 5.1
 (Relasjoner) La $A$ være en mengde utstyrt med en relasjon som gitt $(x, y)\in A\times A$ påstår at $x\triangle y$, som uttales «$x$ triangel $y$». Vi sier at relasjonen er<br>
 * refleksiv dersom:<br> $\forall x\in A\quad x\triangle x$

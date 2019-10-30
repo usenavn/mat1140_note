@@ -32,6 +32,9 @@ module.exports = {
             '/notater/notat6/',
             '/notater/notat7/',
             '/notater/notat8/',
+            '/notater/notat9/',
+            '/notater/notat10/',
+            '/notater/notat11/',
           ]
         },
         {

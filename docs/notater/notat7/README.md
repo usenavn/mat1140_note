@@ -1,4 +1,4 @@
-# 7 Ordnede ringer, hele tall, induksjon
+# 7 Ekvivalens- og ordens-relasjoner.
 ## Definition 7.1
 La $\mathcal{R}$ være utstyrt med addisjon og multiplikasjon slik at vi har å gjøre med en kommutativ ring. Anta videre at $\mathcal{R}$ er utstyrt med en orden $\leq$. Vi sier at ordenen er kompatibel med addisjon og multiplikasjon når følgende holder: $$\forall x,y,z \quad x\leq y\implies x+z\leq y+z$$ $$\forall x,y \quad (0\leq x\land 0\leq y)\implies 0\leq xy$$ En *ordnet ring* er en ring utstyrt med en orden som er kompatibel med addisjon og multiplikasjon. En *totalt ordnet ring* er ordnet ring der ordenen er total, mens en *partielt ordnet ring* er en ordnet ring der ordenen er partiell.
 

@@ -1,0 +1,1 @@
+# 11 Tallteori, Pytagoreiske tripler.

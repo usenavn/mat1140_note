@@ -1,4 +1,4 @@
-# 3 Mengder
+# 3 mengder, inklusjon, snitt, union, komplement.
 ## **Aksiom 3.1**
 (Likhet av mengder). La $A$ og $B$ være mengder. Da er $A$ og $B$ like hvis og bare hvis de har akkurat de samme elementene. Det vil si:$$(A=B)\iff (\forall x\quad x\in A \iff x\in B)$$
 
