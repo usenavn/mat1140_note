@@ -8,6 +8,22 @@ Gitt mengder $A$ og $B$ er *produktet* av $A$ og $B$ veldeinert ved: $$A\times B
 ## Definisjon 3.6 
 En *graf* er en mengde bestående av par. Gitt mengder $A$ og $B$ er en graf fra $A$ til $B$ en delmengde av $A\times B$.
 
+## Definisjon 3.7
+
+## Definisjon 3.8
+
+## Definisjon 3.9
+
+## Definisjon 3.10
+
+## Definisjon 3.11
+
+## Definisjon 3.12
+
+## Definisjon 3.13
+
 ## Lemma 3.1 
 Dersom $f\; :\; A\to B$, $g\; :\; B\to C$ og $h\; :\; C\to D$ har vi $h\circ (g\circ f)=(h\circ g)\circ f$
+
+## Definisjon 3.14
 
