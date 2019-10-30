@@ -1,4 +1,4 @@
-# 5 familier av mengder, in-, sur-, bi-jeksjon.
+# Familier av mengder, in-, sur-, bi-jeksjon.
 ## Aksiom 4.1
 Dersom $\mathcal{A}$ er en mengde bestående av mengder, kan de sistnevnte føyes sammen til en stor mengde, kalt unionen til $\mathcal{A}$, som skrives:$$\cup \mathcal{A}=\{x : \exists A\in \mathcal{A} \quad x\in A\}$$ Med en slik notasjon får vi: $$\cup \{A,B\}=A\cup B$$ Tilsvarende kan man deﬁnere, når $\mathcal{A}$ er en ikke-tom mengde bestående av mengder: $$\cap \mathcal{A}=\{x : \forall A\in \mathcal{A} \quad x\in A \}$$ Merk at vi har: $$\cap \{A,B\}=A\cap B$$
 
