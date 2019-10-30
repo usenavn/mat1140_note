@@ -1,45 +1,70 @@
 # Ekvivalens- og ordens-relasjoner.
-## Definition 7.1
-La $\mathcal{R}$ være utstyrt med addisjon og multiplikasjon slik at vi har å gjøre med en kommutativ ring. Anta videre at $\mathcal{R}$ er utstyrt med en orden $\leq$. Vi sier at ordenen er kompatibel med addisjon og multiplikasjon når følgende holder: $$\forall x,y,z \quad x\leq y\implies x+z\leq y+z$$ $$\forall x,y \quad (0\leq x\land 0\leq y)\implies 0\leq xy$$ En *ordnet ring* er en ring utstyrt med en orden som er kompatibel med addisjon og multiplikasjon. En *totalt ordnet ring* er ordnet ring der ordenen er total, mens en *partielt ordnet ring* er en ordnet ring der ordenen er partiell.
+## Definisjon 5.1
+(Relasjoner) La $A$ være en mengde utstyrt med en relasjon som gitt $(x, y)\in A\times A$ påstår at $x\triangle y$, som uttales «$x$ triangel $y$». Vi sier at relasjonen er<br>
+* refleksiv dersom:<br> $\forall x\in A\quad x\triangle x$
+* symetrisk dersom:<br> $\forall x,y\in A\quad x\triangle y\iff y\triangle x$
+* antisymetrisk dersom:<br> $\forall x,y\in A\quad (x\triangle y\land y\triangle x)\implies x=y$
+* transitiv dersom:<br> $\forall x,y,z\in A\quad (x\triangle y\land y\triangle z)\implies x\triangle z$
 
-## Aksiom 7.1
-(Induksjon) La $P$ være en egenskap definert på $\mathbb{N}$ (mao. har vi et utsagn $P(n)$ for hver $n\in \mathbb{N}$). Dersom vi har:
-* $P(0)$ er sant,
-* $\forall n\in I_m \quad P(n)\implies P(n+1)$
+## Definisjon 5.2
+(Ekvivalenser) Vi sier at en relasjon er en ekvivalens når den er reﬂeksiv, symetrisk og transitiv.
 
-## Teorem 7.1
-La $A$ være en ikke-tom mengde. En følge i $A$ er en avbildning fra $\mathbb{N}$ til $A$.<br>
-&nbsp;&nbsp;&nbsp;&nbsp; Notasjon: Dersom $u : \mathbb{N}\to A$ er en følge er det vanlig å skrive $u_n$ heller enn $u(n)$ for verdien til $u$ i $n\in \mathbb{N}$, og å betegne følgen som $(u_n)_{n\in \mathbb{N}}$. Vi foreslår at man også kan skrive følgen $u$ som: $(u_n : n\in \mathbb{N})$
+## Definisjon 5.3
+(Ordener) La $A$ være en mengde og $\triangle$ være en relasjon på $A$. Vi sier at $\triangle$ er en *orden* når den er reﬂeksiv, antisymetrisk og transitiv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; La $x, y \in A$. Vi sier at $x$ og $y$ er sammenliknbare dersom: $$x\triangle y\lor y\triangle x$$ Vi sier at $\triangle$ er en total orden dersom alle elementer er sammenliknbare. Hvis en orden ikke nødvendigvis er total, kan vi poengtere det ved å si at den er *partiell*.
 
-## Teorem 7.2
-(Følger definert ved induksjon). For hver mengde $A$, for hver avbildning $f : A\to A$ og for hvert element $x\in A$ finnes det en og bare en følge $(u_n)_{n\in \mathbb{N}}$ i $A$ slik at:
+## Deﬁnisjon 5.4
+La $A$ være utstyrt med en ordensrelasjon som vi skriver $\leq$. La $B$ være en delmengde av $A$ og la $a\in A$. Vi sier at:<br>
+* $a$ er en *nedre skranke* for $B$ dersom $(\forall x\in B\quad a\leq x)$.
+* $a$ er et *minimalt* element i $B$ dersom $a\in B$ og $(\forall x\in B\quad x\leq a\implies x = a)$. Dette kan også skrives $a\in B$ og $(\forall x\in B\quad \neg(x < a))$.
+* $a$ er et *minimum* i $B$ dersom $a\in B$ og $(\forall x\in B\quad a\leq x)$. Når dette er tilfellet er $a$ entydig bestemt av $B$ og skrives min$B$. Vi kan også si at $a$ er det minste elementet i $B$.
 
-<center><img src="./teo7.2.png" style="height:90%;"></center>
+*Øvre skranke*, *maksimalt* element, *maksimum* (max$B$, største element), deﬁneres tilsvarende. Vi sier også at:<br>
+* $a$ er et *inﬁmum* av $B$ dersom det er et maksimum i mengden av nedre skranker til $B$. Når dette er tilfellet er $a$ entydig bestemt av $B$ og skrives inf$B$.
 
-## Teorem 7.5
-For hver mengde $A$, for hver bijeksjon $f : A\to A$ og for hvert element $x\in A$ finnes det en og bare en følge $(u_n)_{n\in \mathbb{Z}}$ i $A$ slik at:
+*Supremun* er deﬁnert på tilsvarende måte og skrives sup$B$ når det eksisterer.
 
-<center><img src="./teo7.3.png" style="height:90%;"></center>
+## Definisjon 5.5
+La $(A, \leq)$ og $(B, \leq)$ være to ordnede mengder og la $f : A\to B$ være en avbildning. Vi sier at $f$ er *voksende* dersom: $$\forall x,y\in A \quad x\leq y\implies f(x)\leq f(y)$$ og *strengt voksende* dersom: $$\forall x,y\in A \quad x < y\implies f(x) < f(y)$$ *Avtagende* og *strengt avtagende* deﬁneres ved å reversere ulikhetene blant bildene. Vi sier at $f$ er *monoton* hvis den er voksende eller avtagende.
 
-## Definisjon 7.2
-(Summasjonstegn) La $A$ være utstyrt med en addisjon (assossiativ, kommutativ med neutralt element $0$). Vi definerer summen til følger $(u_k)_{k\in [m,n]}$, ved induksjon på $n\; (n\geq m)$. Vi krever at:
+## Deﬁnisjon 5.6
+En binær operasjon på en mengde $A$ er en avbildning fra $A\times A$ til $A$.
 
-<center><img src="./def7.2.png" style="height:90%;"></center>
+## Deﬁnisjon 5.7
+La $\star : A\times A \to A$ være en operasjon. For $x, y\in A$ skriver vi $x\star y$ i stedet for $\star(x, y)$.<br>
+* Vi sier at operasjonen er assosiativ dersom: $$\forall x,y,z\in A\quad (x\star y)\star z=x\star (y\star z)$$
+* Vi sier at $e\in A$ er et neutralt element dersom: $$\forall x\in A\quad e\star x=x\star e=x$$
+* Vi sier at to elementer $x, y\in A$ kommuterer dersom: $x\star y = y\star x$.
+* Vi sier at operasjonen er kommutativ dersom $x$ og $y$ kommuterer for alle $x, y\in A$.
 
-Vi føyer også til følgende definisjon: $$\sum_{k=m}^{n} u_k=0\; \text{hvis}\; n< m$$
+## Definisjon 5.8
+La $A$ være utstyrt med en assosiativ operasjon og et neutralt element $e$. La $x\in A$. Vi sier at $x$ er invertibel dersom det ﬁnnes $y\in A$ slik at $xy = yx = e$. I såfall er $y$ entydig bestemt av $x$ og kalles inversen til $x$.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Et neutralt element for en assosiativ lov er alltid invertibelt, med seg selv som invers.
 
-## Teorem 7.11
-La $x$ og $y$ være kommuterende elementer i en ring. Da har vi, for hver $n\in \mathbb{N}$:
+## Deﬁnisjon 5.9
+La $A$ være utstyrt med en operasjon $\star$. Man sier at en delmengde $B$ av $A$ er stabil under $\star$ dersom: $$\forall x,y\in B\quad x\star y \in B$$ I såfall kan man utstyre $B$ med den såkalte induserte operasjonen:
 
-<center><img src="./teo7.11.png" style="height:90%;"></center>
+<center><img src="./def5.9.png" style="height:90%;"></center>
 
-## Definisjon 7.3
-(Morfier) La $A$ være utstyrt med en operasjon $\star$ og $B$ være utstyrt med en operasjon $\ast$. Da er en morfi fra $(A,\star)$ til $(B, \ast)$ en avbildning $\Phi : A\to B$ som tilfredsstiller: $$\Phi (x\star y)=\Phi (x)\ast \Phi (y)$$ Dersom $A$ har et neutralt element $e$ og $B$ har neutralt element $f$ er en morfi fra $(A,\star ,e)$ til $(B,\ast ,f)$ en morfi fra $(A,\star)$ til $(B,\ast)$ slik at $\Phi (e)=f$.
+## Definisjon 5.10
+La $B$ være utstyrt med en operasjon $\star$. La $A$ være en ikke
+tom mengde. Vi utstyrer $B^A$ med en operasjon også kalt $\star$ som følger. For $f, g\in B^A$ definerer vi $f\star g\in B^A$ ved: $$\forall x\in A\quad (f\star g)(x)=f(x)\star g(x)$$
 
-## Definisjon 7.4 
-La $\mathcal{R}$ og $\mathcal{R}'$ være to ringer. En ring-morfi er en avbildning $\Phi : \mathcal{R} \to \mathcal{R}'$ slik at $\Phi$ er en morfi med hensyn på både addisjon og multiplikasjon. Med andre ord krever man:
+## Definisjon 5.11
+Vi betrakter en mengde $\mathcal{R}$, utstyrt med to avbildninger kalt addisjon $(+)$ og multiplikasjon $(\times)$:
 
-<center><img src="./def7.4.png" style="height:90%;"></center>
+<center><img src="./def5.11.png" style="height:90%;"></center>
 
-## Teorem 7.14
-Dersom $\mathcal{R}$ er en ring finnes det en og bare en ring morfi $\Phi : \mathbb{Z} \to \mathcal{R}$. Hvis $\mathcal{R}$ i tillegg er ordnet vil $\Phi$ være voksende.
+og to utvalgte elementer $0$ and $1$.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Vi sier at $(\mathcal{R},+,\times , 0, 1)$ er en ring dersom:
+* addisjon er assosiativ, kommutativ, har neutralt element $0$ og hvert
+element $x$ har en invers (som skrives $−x$).
+* multiplikasjon er assosiativ og har neutralt element $1$.
+* multiplikasjon distribuerer over addisjon, i den forstand at for alle $x, y, z\in R$ har vi: $$(x+y)z=xz+yz$$ $$z(x+y)=zx+zy$$
+
+## Definisjon 5.12
+La $\mathcal{R}$ være en ring.
+* Vi sier at $\mathcal{R}$ er triviell dersom $0 = 1$. Da har vi $\mathcal{R} = \{0\}$.
+* Vi sier at $\mathcal{R}$ er kommutativ dersom multiplikasjonen er kommutativ.
+* Dersom $\mathcal{R}$ er ikke-triviell, kommutativ og hvis vi har: $$\forall x,y \quad xy=0\implies (x=0\lor y=0)$$ sier vi at $\mathcal{R}$ er et integritetsdomene.
+* Dersom $\mathcal{R}$ er ikke-triviell, kommutativ og alle elementer bortsett fra $0$ har en multiplikativ invers, sier vi at $\mathcal{R}$ er en kropp.
