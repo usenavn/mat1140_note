@@ -17,3 +17,14 @@ La $I$ og $U$ være en mengder og $$(A_i)_{i\in I}$ en familie delmengder av $U$
 (Utvalgsaksiomet). La $(A_i)_{i\in I}$ være en familie mengder. Vi har da: $$(\forall i\in I\quad A_i\neq \emptyset)\implies \underset{i\in I}{\prod} A_i \neq \emptyset$$ Med andre ord, dersom hver 
 $A_i \neq\emptyset$ kan vi velge et element $f(i) \in A_i$ for hver $i\in I$. Da vil $f$ være et element i $\underset{i\in I}{\prod} A_i$. Grunnen til at det trengs et aksiom er at $I$ kan være uendelig, slik at man gjør uendelig mange valg simultant.
 
+## Definisjon 4.4
+La $f : A\to B$ være en avbildning.<br>
+* Vi sier at $f$ er *injektiv* dersom: $$\forall x,x' \in A\quad f(x)=f(x')\implies x=x'$$
+* Vi sier at $f$ er *surjektiv* dersom: $$\forall y\in B \;\exists x\in A\quad f(x)=y$$
+* Vi sier at $f$ er *bijektiv* dersom $f$ er både injektiv og surjektiv.
+
+## Definisjon 4.5
+Når $f$ er bijektiv, inversavbildningen til $f$ skrives $f^{-1}$.
+
+## Teorem 4.8
+(Cantor) La $A$ være en mengde. Det finnes ingen surjeksjon $A\to \mathcal{P}(A)$. Det finnes heller ingen injekson $\mathcal{P} (A)\to A$.
