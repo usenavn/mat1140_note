@@ -7,3 +7,5 @@ https://mat1140.lianjie.fun
 
 ## Course information
 https://www.uio.no/studier/emner/matnat/math/MAT1140/
+
+## I failed the exam :(
