@@ -9,3 +9,6 @@ https://mat1140.lianjie.fun
 https://www.uio.no/studier/emner/matnat/math/MAT1140/
 
 ## I failed the exam :(
+
+## Run
+$ yarn docs:dev
